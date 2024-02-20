@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolores Umbridge</title>
+    <link rel="icon" href="../Img/Hogwartscrest.webp" type="image/png">
+    <link rel="stylesheet" href="../Style/home.css">
+    <link rel="stylesheet" href="../Style/professors.css">
+</head>
+<body>
+    
+<section class="main-container">
+
+    <div class="form-for-login">
+        <div class="form-overlay"></div>
+        <div class="signin-signup-form">
+        <div class="form-headings">
+            <span class="login-heading">Login</span>
+            <span class="register-heading">Register</span>
+        </div>
+        <div class="form-container">
+            <form class="login">
+            <input type="email" placeholder="Enter your Email" class="login-email" required>
+            <input type="password" placeholder="Password" class="login-password" required>
+            <input type="submit" value="Login" class="form-btn login-btn">
+            </form>
+            <form class="register">
+            <input type="text" placeholder="name" class="register-name" required minlength="2" maxlength="12">
+            <input type="email" placeholder="Enter your Email" class="register-email" required>
+            <input type="password" placeholder="Enter your Password" class="register-password" required minlength="4">
+            <input type="password" placeholder="Confirm Password" class="register-c-password" required minlength="4">
+            <input type="submit" value="Register" class="form-btn register-btn">
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <div class="user-details">
+        <div class="user-details-container">
+            <div class="user-box">
+                <i class="fa-solid fa-xmark user-close"></i>
+                <div class="user-image"><img id="profile-pic" src="" alt="profile pic"><label class="fa-solid fa-camera edit-img" for="upload-img"></label><input type="file" name="image" id="upload-img" accept=".png,.jpg,.jpeg"></div>
+                <h1 class="user-name">user-name</h1>
+                <h3 class="user-house"><button class="user-sorting">Get Sorted</button></h3>
+                <div class="user-email">username@emamil.com</div>
+                <div class="user-password">********</div>
+                <div class="user-change">change  <i class="fa-solid fa-pen-to-square edit-detail"></i></div>
+                <div class="logout-remove">
+                <div class="user-logout">Logout  <i class="fa-solid fa-right-from-bracket"></i></div> 
+                <div class="user-remove">Remove  <i class="fa-solid fa-trash"></i></div>
+                </div>
+            </div>
+            <div class="user-details-change">
+                <form class="change-form">
+                <input type="text" class="change-name" minlength="2" required>
+                <input type="email" name="change-email" class="change-email" required>
+                <input type="password" name="change-password" class="previous-password" placeholder="previous-password" required>
+                <input type="password" name="change-password" class="change-password" placeholder="new-password" required>
+                <input type="password" name="change-password" class="change-c-password" placeholder="confirm-password" required>
+                <input type="submit" value="Change" class="change-btn">
+                <input type="submit" value="Cancel" class="cancel-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <nav class="header-nav">
+            <div class="logo"><img src="../Img/Hogwartscrest.webp" alt="logo"></div>
+            <div class="title">H O G W A R T S <br><span>School  of  Witchcraft  and  Wizardy</span></div>
+            <div class="user"><img id="logo" src="../Img/male.png" alt="user"></div>
+        </nav>
+    </div>
+
+    <div class="sidebar-left"> 
+        <nav>
+            <ul>
+                <li class="nav-btn nav-home"><i class="fa-solid fa-house-chimney"></i><a href="../index.html">Home</a></li>
+                <li class="nav-btn"><i class="fa-solid fa-book-open"></i></i><a href="../Pages/syllabus.html">Syllabus</a></li>
+                <li class="nav-btn"><i class="fa-solid fa-user-tie"></i><a href="../Pages/professors.html">Professors</a></li>
+                <li class="nav-btn"><i class="fa-solid fa-hat-wizard"></i></i></i><a href="../Pages/houses.html">Houses</a></li>
+                <li class="nav-btn"><i class="fa-solid fa-user-group"></i><a href="../Pages/characters.html">Characters</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-box"> 
+    </div>
+
+        <div class="school-professors2">
+            <div class="professor1">
+                <h3>Dolores Umbridge</h3><br>
+                <img src="../Img/professors/Dolores Umbridge.webp" alt="professor"><br>
+            </div>
+
+            <div class="box2">
+                <p>A Ministry of Magic bureaucrat who was able to indulge in her sadistic 
+                    tendencies when she was posted to Hogwarts as Defence Against the Dark Arts professor, 
+                    Dolores Umbridge was famous for her sickly pink wardrobe and her particularly violent 
+                    taste for corporal punishments. Her ambitions saw her take the post of Hogwarts High Inquisitor 
+                    and Headmistress where her unpopularity saw a near rebellion break out amongst the students.
+                </p>
+                <ul>
+                    <li>House : <a href="../Pages/Slytherin.html">Slytherin</a></li>
+                    <li>Skills : 
+                        <ul>
+                            <li>Ministry of Magic professional</li>
+                            <li>Creating her blood quill</li>
+                        </ul>
+                    </li>
+                    <li>Hobbies : 
+                        <ul>
+                            <li>Working for Cornelius Fudge</li>
+                            <li>Torturing students</li>
+                            <li>Adding frills to objects</li>
+                            <li>Collecting ornamental plates decorated with cats</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+
+</section>
+</body>
+</html>

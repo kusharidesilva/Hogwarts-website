@@ -1,0 +1,330 @@
+.hogwarts-houses{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/sorting-hat-img.jfif");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    display: block;
+    padding: 2em;
+    flex-direction: column; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+ 
+
+@media (max-width:769px) {
+    .hogwarts-houses{
+    left: 0;
+    top: 72px;
+    bottom: 121px;
+    background-position: center;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    } 
+}
+
+@media (max-width:481px) {
+    .hogwarts-houses{
+      bottom: 81px;
+      }
+}
+
+@media (max-width:375px) {
+    .hogwarts-houses{
+      bottom: 61px;
+    }
+}
+
+.hogwarts-houses .houses{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 350px;
+    max-width: 400px;
+}
+
+.hogwarts-houses .houses h1{
+    color: #adafaf;
+}
+
+.hogwarts-houses img{
+    height: 150px;
+    width: 150px;
+}
+
+.hogwarts-houses .houses:hover {
+    transform: translateY(-5px);
+}
+
+/* houses introductions */
+/* gryffindor */
+.school-houses{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/houses/gryffindorbg.jfif");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:column; 
+    display:flexbox;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.school-houses .house1{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    color: #fff;
+    margin: 2em;
+}
+
+.school-houses .house1 h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 3em;
+}
+
+.school-houses .house1 img {
+    width: 132%;
+    height: 90%;
+    padding: 10px;
+}
+
+
+.school-houses .box1{
+    background: rgb(57, 3, 3);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 400px;
+    width: 60%;
+    height: 85%;
+    top: 120px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-houses .box1 p{
+    color: #f8a7a7;
+    text-align: justify;
+    padding: .5em;
+}
+
+
+
+/* Slytherin */
+.school-houses2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/houses/slytherinbg.jfif");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:column; 
+    display:flexbox;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.school-houses2 .house2{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    color: #fff;
+    margin: 2em;
+}
+
+.school-houses2 .house2 h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 3em;
+}
+
+.school-houses2 .house2 img {
+    width: 132%;
+    height: 90%;
+    padding: 10px;
+}
+
+
+.school-houses2 .box2{
+    background: rgb(27, 54, 36);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 400px;
+    width: 60%;
+    height: 110%;
+    top: 120px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-houses2 .box2 p{
+    color: #a7f8d5;
+    text-align: justify;
+    padding: .5em;
+}
+
+
+
+/* Ravenclaw */
+.school-houses3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/houses/ravenclawbg.jfif");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:column; 
+    display:flexbox;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.school-houses3 .house3{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    color: #fff;
+    margin: 2em;
+}
+
+.school-houses3 .house3 h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 3em;
+}
+
+.school-houses3 .house3 img {
+    width: 132%;
+    height: 90%;
+    padding: 10px;
+}
+
+
+.school-houses3 .box3{
+    background: rgb(8, 2, 57);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 400px;
+    width: 60%;
+    height: 60%;
+    top: 160px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-houses3 .box3 p{
+    color: #a7a9ea;
+    text-align: justify;
+    padding: .5em;
+}
+
+
+/* Hufflepuff */
+.school-houses4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/houses/hufflepuffbg-new.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:column; 
+    display:flexbox;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.school-houses4 .house4{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    color: #fff;
+    margin: 2em;
+}
+
+.school-houses4 .house4 h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 3em;
+}
+
+.school-houses4 .house4 img {
+    width: 132%;
+    height: 90%;
+    padding: 10px;
+}
+
+
+.school-houses4 .box4{
+    background: rgb(132, 118, 0);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 400px;
+    width: 60%;
+    height: 70%;
+    top: 160px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-houses4 .box4 p{
+    color: #daeaa7;
+    text-align: justify;
+    padding: .5em;
+}

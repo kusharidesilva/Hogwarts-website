@@ -1,0 +1,820 @@
+@font-face {
+    font-family: "Legendary Runes Free Trial";
+    src: url("/font/Legendary Runes Free Trial.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: "Legendary Runes Free Trial", sans-serif;
+    letter-spacing: 2px;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    padding: 5px;
+}
+
+@media (max-width:481px) {
+    body{
+      height: 92.5vh;
+    }
+}
+
+/* width */ 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #addff9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #2c92be;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(99, 165, 247);
+    backdrop-filter: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* login registration form */
+.form-for-login{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 25;
+    display: none;
+}
+
+.form-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    cursor:pointer;
+}
+
+.signin-signup-form{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(74, 161, 208);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.form-headings{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-headings span{
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #5f53ce;
+}
+
+.login-heading{
+    border-bottom: 2px solid #5252d2;
+}
+
+.form-container{
+    display: flex;
+    width: 700px;
+    position: relative;
+    top: 2em;
+    transition: .5s;
+/* justify-content: space-between; */
+}
+
+.form-container .login{
+    position: relative;
+    width: 350px;
+    padding: 1em;
+}
+
+.form-container .register{
+    position: relative;
+    width: 350px;
+    padding: 1em;
+}
+
+.form-container form input{
+    width: 100%;
+    outline: none;
+    height: 2.5em;
+    color: #53b5d3;
+    padding: .5em;
+    font-size: 1.1em;
+    margin: .2em 0;
+    border-radius: 4px;
+    border: none;
+    font-family: sans-serif;
+    letter-spacing: 0;
+}
+
+.login-btn, .register-btn{
+    cursor: pointer;
+}
+
+
+/* user details */
+.user-details{
+    width: 250px;
+    position: absolute;
+    z-index: 25;
+    top: 5em;
+    right: 1em;
+    border-radius: 12px;
+    overflow: hidden;
+    display: none;
+}
+
+.user-details-container{
+    position: relative;
+    display: flex;
+    left: 0;
+    background: rgb(150, 150, 150);
+    width: 500px;
+    transition: .5s;
+}
+
+.user-box{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color: #0a2f60;
+    text-align: center;
+    border-radius: 12px;
+    padding: .3em;
+}
+
+.user-close{
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.user-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    margin-top: .5em;
+    background-color: #8b8a8a;
+}
+
+.user-image img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    display: none;
+}
+
+.user-name{
+    font-size: 2em;
+}
+
+.user-sorting{
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #032bf3;
+    cursor: pointer;
+}
+
+.user-details div{
+    font-family: sans-serif;
+    letter-spacing: 0;
+}
+
+.user-email,.user-password{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: .5em 0;
+    padding: .2em .2em .2em .5em;
+    border: 1px solid #000;
+    text-align: left;
+    height: 25px;
+}
+
+.user-change{
+    width: 100%;
+    padding: .5em 0;
+    background-color: rgb(4, 132, 229);
+    cursor: pointer;
+    color: #fff;
+}
+
+.logout-remove{
+    position: relative;
+    display: flex;
+    height: 35px;
+    width: 100%;
+    color: #fff;
+    margin-top: 2px;
+    cursor: pointer; 
+}
+
+.user-logout{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: inline;
+    padding: 8px 0;
+    background-color: rgb(236, 127, 2);
+    border-radius: 0 0 0 12px;
+    cursor: pointer;
+}
+
+.user-remove{
+    border-radius: 0 0 12px 0;
+    position: relative;
+    width: 50%;
+    padding: 8px 0;
+    background-color:red;
+}
+
+.edit-img{
+    position: absolute;
+    color: #8e8e8e;
+    bottom: .5em;
+    right: .5em;
+    padding: .3em;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#upload-img{
+    display: none;
+}
+
+/* user change form */
+.user-details-change{
+    width: 50%;
+    padding: 1em;
+}
+
+.change-form{
+    margin-top: 2em;
+}
+
+.change-form input{
+    width: 100%;
+    height: 35px;
+    margin: .2em 0;
+    padding-left: .5em;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    letter-spacing: 0;
+}
+
+.change-btn{
+    color: #fff;
+    background-color: #034abd;
+    cursor: pointer;
+}
+
+.cancel-btn{
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+}
+
+
+/* header */
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #05011c;
+    border-radius: 8px 8px 0 0;
+}
+
+.header-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2em;
+}
+  
+.logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+  
+.logo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* title  */
+.title {
+    position: relative;
+    font-size: 2.5em;
+    font-weight: bolder;
+    letter-spacing: 16px;
+    color: #628bfa;
+    height: 70px;
+    padding: 0 7px;
+}
+  
+.title span {
+    position: absolute;
+    font-size: .4em;
+    letter-spacing: 2px;
+    top: 2.8em;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 95%;
+    color: #b3c8f7;
+}
+
+/* user  */
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #3383a5;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+  
+.user img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width:761px) {
+    .header{
+        border-radius: 0;
+    }
+}
+
+@media (max-width:481px) {
+    .header-nav{
+        padding: 0 1em;
+    }
+    .title{
+        font-size: 1.4em;
+        top: .15em;
+        letter-spacing: 10.5px;
+    }
+    .title span{
+        top: 2.3em;
+        font-size: .4em;
+    }
+    .user{
+        height: 40px;
+        width: 40px;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+  }
+
+  @media (max-width:375px) {
+    .header-nav{
+         padding: 0 .7em;
+    }
+    .title{
+        font-size: 1.2em;
+        top: .2em;
+        letter-spacing: 10px;
+    }
+    .title span{
+        top: 2.6em;
+        font-size: .4em;
+        letter-spacing: 2px;
+    }
+    .user{
+        height: 35px;
+        width: 35px;
+    }
+  }
+
+
+/* sidebar-left */
+.sidebar-left {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    border-radius: 0 0 0 8px;
+    background-image: linear-gradient(rgba(26, 30, 53, 0.8), rgba(19, 26, 42, 0.8)), url("../Img/Hogwarts_Legacy_background_seen_on_website.webp");
+    padding: 12px;
+}
+  
+.sidebar-left nav {
+    position: relative;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar-left nav ul li {
+    list-style: none;
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.sidebar-left nav ul li:hover i{
+    text-shadow: 0 0 20px #006f94;
+}
+
+.sidebar-left nav ul li i {
+    font-size: 2em;
+    display: block;
+    color: #4898b7;
+}
+  
+.sidebar-left nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.border-bottom {
+    border-bottom: 3px solid #4898b7;
+}
+  
+.box-container {
+    height: 280px;
+    width: 200px;
+    border-radius: 12px;
+}
+  
+.box-container .char-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px 12px 0 0;
+}
+  
+@media (max-width:769px) {
+    .sidebar-left {
+        position: absolute;
+        right: 0;
+        left: 0;
+        width: 100%;
+        top: auto;
+        height: 100px;
+        border-radius: 0;
+        z-index: 30;
+        height: 120px;
+        background-image: linear-gradient(rgba(26, 30, 53, 0.7), rgba(19, 26, 42, 0.7)), url("../Img/navimg.jfif");
+        background-position: center;
+    }
+    .sidebar-left nav {
+        position: relative;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .sidebar-left nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidebar-left nav ul li{
+        flex: 1 1 0;
+    }
+}
+
+@media (max-width:481px) {
+    .sidebar-left{
+        height: 80px;
+        padding: 0;
+    }
+    .sidebar-left nav ul li{
+        margin: 0;
+    }
+    .sidebar-left nav ul li i{
+        font-size: 1.8em;
+    }
+    .sidebar-left nav ul li a{
+        font-size: .8em;
+    }
+}
+
+@media (max-width:375px) {
+    .sidebar-left{
+         height: 60px;
+    }
+    .sidebar-left nav ul li a{
+        font-size: .5em;
+    }
+}
+
+@media (max-width:320px) {
+    .sidebar-left nav ul li i{
+        font-size: 1.4em;
+    }
+}
+
+/* homebox--head */
+.home-box {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/mainbg.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    overflow-y: scroll;
+    display: block;
+}
+  
+.home-box-head {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+.home-box-head .welcome {
+    font-size: 5em;
+    text-align: center;
+    color: #05001f;
+    transition: .5s;
+    cursor: default;
+}
+
+.welcome:hover{
+    letter-spacing: .1em;
+}
+
+@media (max-width:769px) {
+    .home-box{
+    left: 0;
+    top: 72px;
+    bottom: 121px;
+    background-position: center;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    body{
+      padding: 0;
+    }
+    .main-container{
+      border-radius: 0;
+    }
+}
+
+@media (max-width:481px) {
+    .home-box{
+      bottom: 81px;
+      }
+    .home-box-head .welcome {
+      font-size: 2em;
+    }
+}
+
+@media (max-width:375px) {
+    .home-box{
+      bottom: 61px;
+    }
+    .home-box-head .welcome {
+      font-size: 1.8em;
+    }
+}
+
+@media (max-width:360px) {
+    .home-box-head .welcome {
+      font-size: 1.6em;
+    }
+}
+
+/* hogwarts details */
+.hogwarts-details {
+    position: relative;
+    width: 100%;
+}
+
+.about-hogwarts{
+    width: 100%;
+    height: 80vh;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 2em;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, .80),
+      rgba(0, 0, 0, .80)), url("../Img/hogwarts-bg.jfif");
+      background-size: cover;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+  
+.about-hogwarts div{
+    color: #7cc7ef;
+}
+
+.about-hogwarts h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.more-from-hogwarts{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.more-from-hogwarts .more{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 350px;
+    max-width: 400px;
+}
+
+.more-from-hogwarts .more h1{
+    color: #adafaf;
+}
+
+.more-from-hogwarts img{
+    height: 120px;
+    width: 120px;
+}
+  
+.more-from-hogwarts p{
+    color: #8bd3f4;
+    text-align: center;
+}
+
+.hogwarts-founders{
+    position: relative;
+    width: 100%;
+    height: 155vh;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    flex-wrap: wrap;
+    padding: 5em;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, .80),
+      rgba(0, 0, 0, .80)), url("../Img/hogwarts_castle.jpg");
+      background-size:cover;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+
+}
+
+.hogwarts-founders h1{
+    text-align: center;
+    color: #ffffff;
+} 
+
+.hogwarts-founders .founders{
+    flex: 1 1 0 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 350px;
+    max-width: 400px;
+    
+}
+
+.hogwarts-founders .founders h2{
+    text-align: center;
+    color: #adafaf;
+}
+
+.hogwarts-founders img{
+    height: 120px;
+    width: 130px;
+}
+  
+.hogwarts-founders p{
+    color: #8bd3f4;
+    text-align: center;
+}
+
+  
+@media (max-width:769px) {
+    .about-hogwarts{
+        width: 100%;
+        height: 80vh;
+        font-size: 1.2em;
+    } 
+    .more-from-hogwarts .more{
+        min-width: 280px;
+        max-width: 350px;
+    }
+    .hogwarts-founders .founders{
+        min-width: 280px;
+        max-width: 350px;
+    }
+}
+  
+@media (max-width:481px) {
+    .more-from-hogwarts .more{
+        flex: 1 1 0;
+    } 
+    .hogwarts-founders .founders{
+        flex: 1 1 0 0;
+    }
+}
+  
+@media (max-width:361px) {
+    .about-hogwarts{
+      width: 100%;
+      height: 80vh;
+      font-size: 1em;
+    }
+    .more-from-hogwarts .more{
+      font-size: .9em;
+    }
+    .hogwarts-founders .founders{
+        font-size: 1em;
+    }
+}
+  
+@media (max-width:320px) {
+    .more-from-hogwarts .more{
+      font-size: .5em;
+    }
+    .hogwarts-founders .founders{
+        font-size: .5em;
+    }
+}
+
+
+
+
+
+

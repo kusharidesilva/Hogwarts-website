@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="../Img/Hogwartscrest.webp" type="image/png">
+    <link rel="stylesheet" href="Style/home.css">
+    <script defer src="../Project/JS/script.js"></script>
+ 
+</head>
+<body>
+    <section class="main-container">
+
+        <div class="form-for-login">
+            <div class="form-overlay"></div>
+            <div class="signin-signup-form">
+            <div class="form-headings">
+                <span class="login-heading">Login</span>
+                <span class="register-heading">Register</span>
+            </div>
+            <div class="form-container">
+                <form class="login">
+                <input type="email" placeholder="Enter your Email" class="login-email" required>
+                <input type="password" placeholder="Password" class="login-password" required>
+                <input type="submit" value="Login" class="form-btn login-btn">
+                </form>
+                <form class="register">
+                <input type="text" placeholder="name" class="register-name" required minlength="2" maxlength="12">
+                <input type="email" placeholder="Enter your Email" class="register-email" required>
+                <input type="password" placeholder="Enter your Password" class="register-password" required minlength="4">
+                <input type="password" placeholder="Confirm Password" class="register-c-password" required minlength="4">
+                <input type="submit" value="Register" class="form-btn register-btn">
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <div class="user-details">
+            <div class="user-details-container">
+                <div class="user-box">
+                    <i class="fa-solid fa-xmark user-close"></i>
+                    <div class="user-image"><img id="profile-pic" src="" alt="profile pic"><label class="fa-solid fa-camera edit-img" for="upload-img"></label><input type="file" name="image" id="upload-img" accept=".png,.jpg,.jpeg"></div>
+                    <h1 class="user-name">user-name</h1>
+                    <h3 class="user-house"><button class="user-sorting">Get Sorted</button></h3>
+                    <div class="user-email">username@emamil.com</div>
+                    <div class="user-password">********</div>
+                    <div class="user-change">change  <i class="fa-solid fa-pen-to-square edit-detail"></i></div>
+                    <div class="logout-remove">
+                    <div class="user-logout">Logout  <i class="fa-solid fa-right-from-bracket"></i></div> 
+                    <div class="user-remove">Remove  <i class="fa-solid fa-trash"></i></div>
+                    </div>
+                </div>
+                <div class="user-details-change">
+                    <form class="change-form">
+                    <input type="text" class="change-name" minlength="2" required>
+                    <input type="email" name="change-email" class="change-email" required>
+                    <input type="password" name="change-password" class="previous-password" placeholder="previous-password" required>
+                    <input type="password" name="change-password" class="change-password" placeholder="new-password" required>
+                    <input type="password" name="change-password" class="change-c-password" placeholder="confirm-password" required>
+                    <input type="submit" value="Change" class="change-btn">
+                    <input type="submit" value="Cancel" class="cancel-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <nav class="header-nav">
+                <div class="logo"><img src="Img/Hogwartscrest.webp" alt="logo"></div>
+                <div class="title">H O G W A R T S <br><span>School  of  Witchcraft  and  Wizardy</span></div>
+                <div class="user"><img id="logo" src="Img/male.png" alt="user"></div>
+            </nav>
+        </div>
+        <div class="sidebar-left"> 
+            <nav>
+                <ul>
+                    <li class="nav-btn nav-home"><i class="fa-solid fa-house-chimney"></i><br><a href="index.html">Home</a></li>
+                    <li class="nav-btn"><i class="fa-solid fa-book-open"></i><br><a href="Pages/syllabus.html">Syllabus</a></li>
+                    <li class="nav-btn"><i class="fa-solid fa-user-tie"></i><br><a href="Pages/professors.html">Professors</a></li>
+                    <li class="nav-btn"><i class="fa-solid fa-hat-wizard"></i><br><a href="Pages/houses.html">Houses</a></li>
+                    <li class="nav-btn"><i class="fa-solid fa-user-group"></i><br><a href="Pages/characters.html">Characters</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-box">
+        </div>
+ 
+        <div class="home-box show-display">
+            <div class="home-box-head">
+                <h1 class="welcome">WELCOME TO HOGWARTS</h1>
+            </div>
+            <!-- hogwarts-details  -->
+            <div class="hogwarts-details">
+                <div class="about-hogwarts">
+                    <div>
+                    <h1>About Hogwarts</h1><br><br>
+                    Hogwarts was built in a valley area — surrounding mountains were part of the landscape — with the fairly large Great Lake to thesouth of the main building. The huge main oak front doors that led into the Entrance Hall faced west, and opened up to slopinglawns. The deep Forbidden Forest extended around to the west of the castle. There were also exterior greenhouses and vegetablepatches on the school grounds.
+                    </div>
+                </div>
+
+                <div class="more-from-hogwarts">
+                    <div class="more">
+                        <img src="Img/spell.png" alt="classes">
+                        <h1>Attend classes</h1>
+                        <p>Build up your schooling path by following the subjects taught at Hogwarts and earn points for your house through your grades</p>
+                    </div>
+                    <div class="more">
+                        <img src="Img/potions.png" alt="classes">
+                        <h1>Shoping</h1>
+                        <p>Potions ingredients, jokes and hoaxes or maintenance kit for broomsticks, apend your Galleons on more than 290 objects</p>
+                    </div>
+                    <div class="more">
+                        <img src="Img/owl.png" alt="classes">
+                        <h1>Adopt a pet</h1>
+                        <p>Owls and cats, frogs and rats, Pygmy puffs and so many others will accompany you throughout your school years!</p>
+                    </div>
+                    <div class="more">
+                        <img src="Img/quidditch2.png" alt="classes">
+                        <h1>Play quidditch</h1>
+                        <p>Participate in the Inter House Quidditch Cup, and support your team in the national and international tournaments!</p>
+                    </div>
+                </div> 
+
+                <div class="hogwarts-founders">
+                        <h1>Founders</h1><br><br>
+                   
+                    <div class="founders">
+                        <img src="Img/founders/godric-gryffindor_founder.webp" alt="founder">
+                        <h2>Godric Gryffindor</h2>
+                        <p>One of the four founders of Hogwarts School of Witchcraft and Wizardry, Godric Gryffindor's house favoured students who were bold and brave. The wizard's legacy at Hogwarts was apparent in many ways, from his support of Muggle-born students attending the school to his portrait on the seventh floor, to the sword that appeared for any true Gryffindor in need of it. It was even rumoured to be Godric's own hat that was enchanted and used to sort incoming students. His home, the village that would come to be named Godric's Hollow, would be the home of several famous wizarding world characters, such as Bathilda Bagshot, the Dumbledores and The Potters.</p>
+                    </div>
+                    <div class="founders">
+                        <img src="Img/founders/rowena-ravenclaw_founder.webp" alt="founder">
+                        <h2>Rowena Ravenclaw</h2>
+                        <p>A founder of Hogwarts School of Witchcraft and Wizardry, Rowena was known for her brilliant mind and love of learning. Her house encouraged these qualities in its students, and as a result, boasted some of the cleverest and highest achieving witches and wizards at the school. However, Rowena's history was mired in tragedy. Rowena's daughter Helena was murdered after stealing her mother's enchanted diadem and running away. Both Helena and her murderer, The Bloody Baron, haunted Hogwarts, representing Ravenclaw and Slytherin house respectively.</p>
+                    </div>
+                    <div class="founders">
+                        <img src="Img/founders/SalazarSlytherin_Founders.webp" alt="founder">
+                        <h2>Salazar Slytherin</h2>
+                        <p>Salazar Slytherin was one of the four founders of Hogwarts School of Witchcraft and Wizardry and the least open to the idea of non-magical families sending their children to the school. Slytherin was a talented wizard, and skilled in Parseltongue and Legilimency, who favoured students in particular who showed signs of cunning and ambition. As he became more obsessed with the idea of magical purity, he grew away from his fellow founders and was eventually cast out of the school - but not before he was able to hide a dark secret within the walls of the castle. Salazar's dark legacy (and several of his possessions) would pass down his family, such as his locket and ring.</p>
+                    </div>
+                    <div class="founders">
+                        <img src="Img/founders/helga hufflepuff_founder.jpg" alt="founder">
+                        <h2>Helga Hufflepuff</h2>
+                        <p>Helga Hufflepuff was a Welsh witch and was one of the four founders of Hogwarts School of Witchcraft and Wizardry. While the other founders chose to have special students, she accepted them all, but the students of her house are described as loyal and hard-working. Helga's portrait remains at Hogwarts. Helga Hufflepuff was born in the 10th century and came from the broad valleys of Wales.[2] She was either born or married into the Hufflepuff family. Helga's greatest friend was Rowena Ravenclaw from the Scottish glens.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

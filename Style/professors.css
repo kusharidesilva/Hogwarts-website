@@ -1,0 +1,459 @@
+.hogwarts-professors{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/hogwarts-bg.jfif");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top:72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    display: block;
+    padding: 2em;
+    flex-direction: column; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    overflow:scroll; 
+}
+
+
+@media (max-width:769px) {
+    .hogwarts-professors{
+    left: 0;
+    top: 72px;
+    bottom: 121px;
+    background-position: center;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+      width: 10px;
+    } 
+}
+
+@media (max-width:481px) {
+    .hogwarts-professors{
+      bottom: 81px;
+      }
+}
+
+@media (max-width:375px) {
+    .hogwarts-professors{
+      bottom: 61px;
+    }
+}
+
+.hogwarts-professors .professors{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 350px;
+    max-width: 400px;
+}
+
+.hogwarts-professors .professors h1{
+    color: #adafaf;
+}
+
+.hogwarts-professors img{
+    height: 150px;
+    width: 150px;
+}
+
+.hogwarts-professors .professors:hover {
+    transform: translateY(-5px);
+}
+
+
+.school-professors{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/01.avif");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll;  
+}
+
+.school-professors .professor1{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    color: #fff;
+    margin: .5em;
+}
+
+.school-professors .professor1 h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 2em;
+}
+
+.school-professors .professor1 img {
+    width: 120%;
+    height: 120%;
+    padding: 10px;
+}
+
+.school-professors .box{
+    background: rgb(43, 53, 84);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 350px;
+    width: 66%;
+    height: 105%;
+    top: 110px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-professors .box p{
+    color: #8bd3f4;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors .box ul{
+    color: #8bd3f4;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors .box a{
+    color: #ffffff;
+    text-align: justify;
+    padding: .5em;
+}
+
+/* Argus Flich */
+.school-professors .box1{
+    background: rgb(34, 54, 27);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 350px;
+    width: 60%;
+    height: 70%;
+    top: 110px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-professors .box1 p{
+    color: #8bf4ce;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors .box1 ul{
+    color: #8bf4ce;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors .box1 a{
+    color: #ffffff;
+    text-align: justify;
+    padding: .5em;
+}
+
+/* Filius Flitwick */
+.school-professors .box3{
+    background: rgb(43, 31, 59);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 350px;
+    width: 60%;
+    height: 48%;
+    top: 110px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-professors .box3 p{
+    color: #f5aff7;
+    text-align: justify;
+    padding: .5em;
+}
+
+/* Minerva McGonagall */
+.school-professors2 .box4{
+    background: rgb(54, 27, 50);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 350px;
+    width: 60%;
+    height: 75%;
+    top: 110px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-professors2 .box4 p{
+    color: #f8a7e2;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors2 .box4 ul{
+    color: #f8a7e2;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors2 .box4 a{
+    color: #ffffff;
+    text-align: justify;
+    padding: .5em;
+}
+
+
+/* Severus Snape */
+.school-professors .box5{
+    background: rgb(27, 53, 54);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 350px;
+    width: 60%;
+    height: 65%;
+    top: 110px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-professors .box5 p{
+    color: #8bd3f4;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors .box5 ul{
+    color: #94d8f7;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors .box5 a{
+    color: #ffffff;
+    text-align: justify;
+    padding: .5em;
+}
+
+
+/* Lockhart */
+.school-professors .box6{
+    background: rgb(16, 85, 100);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 350px;
+    width: 66%;
+    height: 91%;
+    top: 110px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-professors .box6 p{
+    color: #8bd3f4;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors .box6 ul{
+    color: #8bd3f4;
+    text-align: justify;
+    padding: .5em;
+}
+
+
+.school-professors2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/04.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.school-professors2 .professor1{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    color: #fff;
+    margin: .5em;
+}
+
+.school-professors2 .professor1 h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 2em;
+}
+
+.school-professors2 .professor1 img {
+    width: 120%;
+    height: 120%;
+    padding: 10px;
+}
+
+/* Dolores Umbridge */
+.school-professors2 .box2{
+    background: rgb(59, 43, 31);
+    justify-content: right;
+    position:absolute;
+    right: 0;
+    left: 350px;
+    width: 60%;
+    height: 75%; 
+    top: 110px; 
+    bottom: 62px;
+    padding: 2em;
+}
+
+.school-professors2 .box2 p{ 
+    color: #f6a8a8;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors2 .box2 ul{
+    color: #f6a8a8;
+    text-align: justify;
+    padding: .5em;
+}
+
+.school-professors2 .box2 a{
+    color: #ffffff;
+    text-align: justify;
+    padding: .5em;
+}
+/* 
+@media (max-width:769px) {
+    .school-professors{
+    left: 0;
+    top: 72px;
+    bottom: 121px;
+    background-position: center;
+    }
+    .school-professors2{
+        left: 0;
+        top: 72px;
+        bottom: 121px;
+        background-position: center;
+    }
+}
+
+@media (max-width:481px) {
+    .school-professors{
+        bottom: 81px;
+    }
+    .school-professors2{
+        bottom: 81px;
+    }
+}
+
+@media (max-width:375px) {
+    .school-professors{
+         bottom: 61px;
+    }
+    .school-professors2{
+        bottom: 61px;
+   }
+}
+
+@media (max-width:769px) {
+    .school-professors{
+        justify-content: center;
+    }
+    .school-professors2{
+        justify-content: center;
+      }
+}
+
+@media (max-width:481px) {
+    .school-professors .professor1 h3 {
+      font-size: 1em;
+    }
+    .school-professors .professor1 {
+      min-width: 150px;
+      max-width: 250px;
+      background: rgb(45, 50, 77);
+      color: #fff;
+      margin: .5em;
+    }
+    .school-professors .box p {
+        font-size: .5em;
+    }
+    .school-professors .box {
+        justify-items: center;
+    }
+    .school-professors .box1 p {
+        font-size: .5em;
+    }
+    .school-professors .box1 {
+        justify-items: center;
+    }
+    .school-professors .box3 p {
+        font-size: .5em;
+    }
+    .school-professors .box3 {
+        justify-items: center;
+    }
+
+    .school-professors2 .professor1 h3 {
+        font-size: 1em;
+    }
+    .school-professors2 .professor1 {
+        min-width: 150px;
+        max-width: 250px;
+        background: rgb(45, 50, 77);
+        color: #fff;
+        margin: .5em;
+    }
+    .school-professors2 .box2 p {
+          font-size: .5em;
+    }
+    .school-professors2 .box2 {
+          justify-items: center;
+    }
+}
+
+ */

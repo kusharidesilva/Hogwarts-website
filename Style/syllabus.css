@@ -1,0 +1,69 @@
+.hogwarts-school-years{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/hogwarts_castle.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    display: block;
+    padding: 2em;
+    flex-direction: column; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+
+@media (max-width:769px) {
+    .hogwarts-school-years{
+    left: 0;
+    top: 72px;
+    bottom: 121px;
+    background-position: center;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    } 
+}
+
+@media (max-width:481px) {
+    .hogwarts-school-years{
+      bottom: 81px;
+      }
+}
+
+@media (max-width:375px) {
+    .hogwarts-school-years{
+      bottom: 61px;
+    }
+}
+
+.hogwarts-school-years .year{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 350px;
+    max-width: 400px;
+}
+
+.hogwarts-school-years .year h1{
+    color: #adafaf;
+}
+
+.hogwarts-school-years img{
+    height: 150px;
+    width: 150px;
+}
+
+.hogwarts-school-years .year:hover {
+    transform: translateY(-5px);
+}
+

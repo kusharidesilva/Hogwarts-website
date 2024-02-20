@@ -1,0 +1,613 @@
+
+
+.year1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/01.avif");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px; 
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.year2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/02.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.year3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/03.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.year4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/04.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.year5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/05.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.year6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/06.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+.year7{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.708),rgb(0, 0, 0, 0.6), rgb(0, 0, 0,0.8)), url("../Img/years/07.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 122px;
+    width: 100%;
+    top: 72px;
+    bottom: 0;
+    border-radius: 0 0 8px 0;
+    padding: 5px;
+    flex-direction:row; 
+    display:inline-flex;
+    flex-wrap:wrap;
+    overflow:scroll; 
+}
+
+
+@media (max-width:769px) {
+    .year1{
+    left: 0;
+    top: 72px;
+    bottom: 121px;
+    background-position: center;
+    }
+    .year2{
+        left: 0;
+        top: 72px;
+        bottom: 121px;
+        background-position: center;
+    }
+    .year3{
+        left: 0;
+        top: 72px;
+        bottom: 121px;
+        background-position: center;
+    }
+    .year4{
+        left: 0;
+        top: 72px;
+        bottom: 121px;
+        background-position: center;
+    }
+    .year5{
+        left: 0;
+        top: 72px;
+        bottom: 121px;
+        background-position: center;
+    }
+    .year6{
+        left: 0;
+        top: 72px;
+        bottom: 121px;
+        background-position: center;
+    }
+    .year7{
+        left: 0;
+        top: 72px;
+        bottom: 121px;
+        background-position: center;
+    }
+        
+    ::-webkit-scrollbar {
+      display: none;
+    } 
+}
+
+@media (max-width:481px) {
+    .year1{
+        bottom: 81px;
+    }
+    .year2{
+        bottom: 81px;
+    }
+    .year3{
+        bottom: 81px;
+    }
+    .year4{
+        bottom: 81px;
+    }
+    .year5{
+        bottom: 81px;
+    }
+    .year6{
+        bottom: 81px;
+    }
+    .year7{
+        bottom: 81px;
+    }
+}
+
+@media (max-width:375px) {
+    .year1{
+         bottom: 61px;
+    }
+    .year2{
+        bottom: 61px;
+    }
+    .year3{
+        bottom: 61px;
+    }
+    .year4{
+        bottom: 61px;
+    }
+    .year5{
+        bottom: 61px;
+    }
+    .year6{
+        bottom: 61px;
+    }
+    .year7{
+        bottom: 61px;
+    }
+}
+
+.year1 .subject{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    background: rgb(43, 53, 84);
+    color: #fff;
+    margin: .5em;
+}
+
+  
+.year1 .subject:hover {
+    transform: translateY(-5px);
+}
+
+.year1 .subject h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.year1 .subject p{
+    color: #8bd3f4;
+    text-align: center;
+    padding: .5em;
+}
+
+.year1 .subject img {
+    width: 100%;
+    height: 180px;
+}
+
+/* year2 */
+.year2 .subject{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    background: rgb(43, 84, 54);
+    color: #fff;
+    margin: .5em;
+}
+
+  
+.year2 .subject:hover {
+    transform: translateY(-5px);
+}
+
+.year2 .subject h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.year2 .subject p{
+    color: #8bd3f4;
+    text-align: center;
+    padding: .5em;
+}
+
+.year2 .subject img {
+    width: 100%;
+    height: 180px;
+}
+
+/* year3 */
+.year3 .subject{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    background: rgb(90, 95, 49);
+    color: #fff;
+    margin: .5em;
+}
+
+  
+.year3 .subject:hover {
+    transform: translateY(-5px);
+}
+
+.year3 .subject h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.year3 .subject p{
+    color: #8bd3f4;
+    text-align: center;
+    padding: .5em;
+}
+
+.year3 .subject img {
+    width: 100%;
+    height: 180px;
+}
+
+/* year4 */
+.year4 .subject{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    background: rgb(84, 43, 77);
+    color: #fff;
+    margin: .5em;
+}
+
+  
+.year4 .subject:hover {
+    transform: translateY(-5px);
+}
+
+.year4 .subject h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.year4 .subject p{
+    color: #8bd3f4;
+    text-align: center;
+    padding: .5em;
+}
+
+.year4 .subject img {
+    width: 100%;
+    height: 180px;
+}
+
+/* year5 */
+.year5 .subject{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    background: rgb(84, 43, 43);
+    color: #fff;
+    margin: .5em;
+}
+
+  
+.year5 .subject:hover {
+    transform: translateY(-5px);
+}
+
+.year5 .subject h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.year5 .subject p{
+    color: #8bd3f4;
+    text-align: center;
+    padding: .5em;
+}
+
+.year5 .subject img {
+    width: 100%;
+    height: 180px;
+}
+
+/* year6 */
+.year6 .subject{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    background: rgb(55, 43, 84);
+    color: #fff;
+    margin: .5em;
+}
+
+  
+.year6 .subject:hover {
+    transform: translateY(-5px);
+}
+
+.year6 .subject h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.year6 .subject p{
+    color: #8bd3f4;
+    text-align: center;
+    padding: .5em;
+}
+
+.year6 .subject img {
+    width: 100%;
+    height: 180px;
+}
+
+/* year7 */
+.year7 .subject{
+    padding: 1em;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 0px;
+    background: rgb(43, 72, 84);
+    color: #fff; 
+    margin: .5em;
+}
+
+  
+.year7 .subject:hover {
+    transform: translateY(-5px);
+}
+
+.year7 .subject h3{
+    color: #adafaf;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.year7 .subject p{
+    color: #8bd3f4;
+    text-align: center;
+    padding: .5em;
+}
+
+.year7 .subject img {
+    width: 100%;
+    height: 180px;
+}
+
+
+@media (max-width:769px) {
+    .year1{
+      justify-content: center;
+    }
+    .year2{
+        justify-content: center;
+    }
+    .year3{
+        justify-content: center;
+    }
+    .year4{
+        justify-content: center;
+    }
+    .year5{
+        justify-content: center;
+    }
+    .year6{
+        justify-content: center;
+    }
+    .year7{
+        justify-content: center;
+    }
+}
+
+@media (max-width:481px) {
+    .year1 .subject h3 {
+      font-size: 1em;
+    }
+    
+    .year1 .subject p {
+      font-size: .5em;
+    }
+    .year1 .subject {
+      min-width: 150px;
+      max-width: 250px;
+      background: rgb(45, 50, 77);
+      color: #fff;
+      margin: .5em;
+    }
+    .year2 .subject h3 {
+        font-size: 1em;
+      }
+      
+    .year2 .subject p {
+        font-size: .5em;
+    }
+    .year2 .subject {
+        min-width: 150px;
+        max-width: 250px;
+        background: rgb(45, 50, 77);
+        color: #fff;
+        margin: .5em;
+    }
+    .year3 .subject h3 {
+        font-size: 1em;
+      }
+      
+    .year3 .subject p {
+        font-size: .5em;
+    }
+    .year3 .subject {
+        min-width: 150px;
+        max-width: 250px;
+        background: rgb(45, 50, 77);
+        color: #fff;
+        margin: .5em;
+    }
+    .year4 .subject h3 {
+        font-size: 1em;
+      }
+      
+    .year4 .subject p {
+        font-size: .5em;
+    }
+    .year4 .subject {
+        min-width: 150px;
+        max-width: 250px;
+        background: rgb(45, 50, 77);
+        color: #fff;
+        margin: .5em;
+    }
+    .year5 .subject h3 {
+        font-size: 1em;
+      }
+      
+    .year5 .subject p {
+        font-size: .5em;
+    }
+    .year5 .subject {
+        min-width: 150px;
+        max-width: 250px;
+        background: rgb(45, 50, 77);
+        color: #fff;
+        margin: .5em;
+    }
+    .year6 .subject h3 {
+        font-size: 1em;
+      }
+      
+    .year6 .subject p {
+        font-size: .5em;
+    }
+    .year6 .subject {
+        min-width: 150px;
+        max-width: 250px;
+        background: rgb(45, 50, 77);
+        color: #fff;
+        margin: .5em;
+    }
+    .year7 .subject h3 {
+        font-size: 1em;
+      }
+      
+    .year7 .subject p {
+        font-size: .5em;
+    }
+    .year7 .subject {
+        min-width: 150px;
+        max-width: 250px;
+        background: rgb(45, 50, 77);
+        color: #fff;
+        margin: .5em;
+    }
+}
+  
+
+
+
